@@ -1,15 +1,28 @@
-# HEARTBEAT.md
+# cnhuz CEO 学习+行动机制
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 每30分钟：学习调研 + 机会检查
 
-# Add tasks below when you want the agent to check something periodically.
+### 学习任务（持续进行）
+- 调研 AI 赚钱趋势
+- 研究 OpenClaw 高级用法
+- 探索新技术/新工具
+- 跟踪行业动态
 
-## 记忆维护（每周一次）
+### 商业思考
+1. **新想法** — 有没有值得尝试的方向？
+2. **快速验证** — 想法可行立即小规模测试
+3. **进展汇报** — 每天总结学习+行动成果
 
-读取 `memory/heartbeat-state.json`，检查 `lastMemoryMaintenance` 字段。
-如果距今 >= 7 天：
-1. 读最近 7 天的 `memory/YYYY-MM-DD.md` 日志
-2. 提炼有价值的信息到对应文件（projects.md / lessons.md）
-3. 压缩已完成一次性任务的日志为一行结论
-4. 删除过期信息
-5. 更新 `heartbeat-state.json` 的 `lastMemoryMaintenance` 为今天
+### 行动原则
+- 有想法就尝试，不用等完全学完
+- 小步快跑，快速验证
+- 失败了就换方向，继续学习
+
+### 汇报频率
+- 重要进展随时汇报
+- 每天至少一次综合报告
+
+---
+
+**目标：** 3个月内确定方向并产出结果
+**时间：** 2026年3月 - 6月

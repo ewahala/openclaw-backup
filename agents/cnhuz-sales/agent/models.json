@@ -1,0 +1,5 @@
+{
+  "defaultModel": "bailian/MiniMax-M2.5",
+  "fallbackModel": "bailian/qwen3-max-2026-01-23",
+  "thinkingEnabled": false
+}

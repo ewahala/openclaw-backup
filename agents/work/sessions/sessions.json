@@ -10,7 +10,7 @@
       "accountId": "work"
     },
     "sessionId": "7be1b863-4d1e-4dd0-83b8-29f8b28fc20d",
-    "updatedAt": 1772504355386,
+    "updatedAt": 1772535620436,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -123,14 +123,14 @@
       "version": 0
     },
     "modelProvider": "bailian",
-    "model": "qwen3-max-2026-01-23",
+    "model": "MiniMax-M2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772504338198,
+      "generatedAt": 1772535615050,
       "sessionId": "7be1b863-4d1e-4dd0-83b8-29f8b28fc20d",
       "sessionKey": "agent:work:telegram:direct:5654562733",
       "provider": "bailian",
-      "model": "qwen3-max-2026-01-23",
+      "model": "MiniMax-M2.5",
       "workspaceDir": "/home/ubuntu/.openclaw/workspace-work",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -139,9 +139,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 28012,
+        "chars": 27981,
         "projectContextChars": 12786,
-        "nonProjectContextChars": 15226
+        "nonProjectContextChars": 15195
       },
       "injectedWorkspaceFiles": [
         {
@@ -383,17 +383,17 @@
         ]
       }
     },
-    "cacheRead": 0,
+    "cacheRead": 1364,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "compactionCount": 0,
-    "contextTokens": 262144,
-    "inputTokens": 40050,
-    "outputTokens": 238,
-    "totalTokens": 20332
+    "contextTokens": 1000000,
+    "inputTokens": 18456,
+    "outputTokens": 243,
+    "totalTokens": 19820
   },
   "agent:work:main": {
-    "updatedAt": 1772504337551,
+    "updatedAt": 1772535613668,
     "sessionId": "0ea0b502-6ebe-4a1c-9431-719a19092901"
   },
   "agent:work:telegram:group:-5139686612": {

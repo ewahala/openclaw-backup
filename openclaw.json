@@ -1,12 +1,12 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.2.25",
-    "lastTouchedAt": "2026-03-02T14:39:11.507Z"
+    "lastTouchedVersion": "2026.3.1",
+    "lastTouchedAt": "2026-03-03T14:15:23.871Z"
   },
   "wizard": {
-    "lastRunAt": "2026-02-27T00:09:48.640Z",
-    "lastRunVersion": "2026.2.25",
-    "lastRunCommand": "configure",
+    "lastRunAt": "2026-03-03T14:15:23.851Z",
+    "lastRunVersion": "2026.3.1",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "logging": {
@@ -172,7 +172,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "bailian/qwen3-max-2026-01-23"
+        "primary": "bailian/MiniMax-M2.5"
       },
       "models": {
         "bailian/qwen3-max-2026-01-23": {
@@ -220,6 +220,10 @@
           "systemPrompt": "Session nearing compaction. Store durable memories now."
         }
       },
+      "heartbeat": {
+        "every": "15m",
+        "target": "last"
+      },
       "maxConcurrent": 4,
       "subagents": {
         "maxConcurrent": 8
@@ -242,40 +246,6 @@
         "agentDir": "/home/ubuntu/.openclaw/agents/neo/agent"
       }
     ]
-  },
-  "memory": {
-    "backend": "qmd",
-    "citations": "auto",
-    "qmd": {
-      "command": "/home/ubuntu/.nvm/versions/node/v24.14.0/bin/qmd",
-      "includeDefaultMemory": true,
-      "searchMode": "search",
-      "update": {
-        "interval": "5m",
-        "debounceMs": 15000,
-        "onBoot": true,
-        "waitForBootSync": false
-      },
-      "limits": {
-        "maxResults": 8,
-        "timeoutMs": 5000
-      },
-      "sessions": {
-        "enabled": true,
-        "retentionDays": 30
-      },
-      "scope": {
-        "default": "deny",
-        "rules": [
-          {
-            "action": "allow",
-            "match": {
-              "chatType": "direct"
-            }
-          }
-        ]
-      }
-    }
   },
   "tools": {
     "web": {
@@ -321,17 +291,17 @@
     "ownerDisplay": "raw"
   },
   "session": {
-    "dmScope": "per-channel-peer"
+    "dmScope": "per-channel-peer",
+    "reset": {
+      "mode": "idle",
+      "idleMinutes": 52560000
+    }
   },
   "channels": {
     "telegram": {
       "enabled": true,
       "dmPolicy": "pairing",
-      "allowFrom": [
-        "5654562733"
-      ],
-      "groupPolicy": "open",
-      "streaming": "partial",
+      "groupPolicy": "allowlist",
       "actions": {
         "reactions": true,
         "sendMessage": true,
@@ -359,8 +329,17 @@
           "botToken": "8659340236:AAErFGV4kUOsr3DH-R1f95nyZg50mZi4Qv4",
           "groupPolicy": "open",
           "streaming": "off"
+        },
+        "default": {
+          "dmPolicy": "pairing",
+          "allowFrom": [
+            "5654562733"
+          ],
+          "groupPolicy": "open",
+          "streaming": "partial"
         }
-      }
+      },
+      "streaming": "off"
     }
   },
   "gateway": {
@@ -387,6 +366,40 @@
         "contacts.add",
         "reminders.add"
       ]
+    }
+  },
+  "memory": {
+    "backend": "qmd",
+    "citations": "auto",
+    "qmd": {
+      "command": "/home/ubuntu/.nvm/versions/node/v24.14.0/bin/qmd",
+      "searchMode": "search",
+      "includeDefaultMemory": true,
+      "sessions": {
+        "enabled": true,
+        "retentionDays": 30
+      },
+      "update": {
+        "interval": "5m",
+        "debounceMs": 15000,
+        "onBoot": true,
+        "waitForBootSync": false
+      },
+      "limits": {
+        "maxResults": 8,
+        "timeoutMs": 5000
+      },
+      "scope": {
+        "default": "deny",
+        "rules": [
+          {
+            "action": "allow",
+            "match": {
+              "chatType": "direct"
+            }
+          }
+        ]
+      }
     }
   },
   "plugins": {
