@@ -1,0 +1,13 @@
+collections:
+  memory-root-neo:
+    path: /home/ubuntu/.openclaw/workspace-neo
+    pattern: MEMORY.md
+  memory-alt-neo:
+    path: /home/ubuntu/.openclaw/workspace-neo
+    pattern: memory.md
+  memory-dir-neo:
+    path: /home/ubuntu/.openclaw/workspace-neo/memory
+    pattern: "**/*.md"
+  sessions-neo:
+    path: /home/ubuntu/.openclaw/agents/neo/qmd/sessions
+    pattern: "**/*.md"
