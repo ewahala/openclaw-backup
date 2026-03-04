@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.1",
-    "lastTouchedAt": "2026-03-03T14:15:23.871Z"
+    "lastTouchedVersion": "2026.3.2",
+    "lastTouchedAt": "2026-03-04T16:31:28.253Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-03T14:15:23.851Z",
@@ -212,6 +212,7 @@
         "model": "BAAI/bge-m3"
       },
       "compaction": {
+        "mode": "safeguard",
         "reserveTokensFloor": 20000,
         "memoryFlush": {
           "enabled": true,
@@ -235,7 +236,7 @@
         "heartbeat": {
           "every": "30m",
           "target": "telegram",
-          "to": "-5139686612", // optional: route to a specific topic/thread
+          "to": "-5139686612",
           "accountId": "main"
         }
       },
@@ -247,7 +248,7 @@
         "heartbeat": {
           "every": "30m",
           "target": "telegram",
-          "to": "-5139686612", // optional: route to a specific topic/thread
+          "to": "-5139686612",
           "accountId": "work"
         }
       },
@@ -259,7 +260,7 @@
         "heartbeat": {
           "every": "30m",
           "target": "telegram",
-          "to": "-5139686612", // optional: route to a specific topic/thread
+          "to": "-5139686612",
           "accountId": "neo"
         }
       }
@@ -318,15 +319,7 @@
   "channels": {
     "telegram": {
       "enabled": true,
-      "actions": {
-        "reactions": true,
-        "sendMessage": true,
-        "deleteMessage": true,
-        "sticker": true
-      },
-      "allowFrom": [
-        "5654562733"
-      ],
+      "dmPolicy": "pairing",
       "groups": {
         "*": {
           "requireMention": true
@@ -334,6 +327,17 @@
         "-5139686612": {
           "requireMention": true
         }
+      },
+      "allowFrom": [
+        "5654562733"
+      ],
+      "groupPolicy": "allowlist",
+      "streaming": "off",
+      "actions": {
+        "reactions": true,
+        "sendMessage": true,
+        "deleteMessage": true,
+        "sticker": true
       },
       "accounts": {
         "main": {
@@ -348,7 +352,7 @@
           "dmPolicy": "pairing",
           "botToken": "8750847898:AAG6q6xrJ8J05qB0KsLVFOMNVvB2Ja1-E3s",
           "groupPolicy": "allowlist",
-          "streaming": "progress"
+          "streaming": "partial"
         },
         "neo": {
           "enabled": true,
@@ -365,8 +369,7 @@
           "groupPolicy": "allowlist",
           "streaming": "partial"
         }
-      },
-      "streaming": "off"
+      }
     }
   },
   "gateway": {

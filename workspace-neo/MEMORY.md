@@ -50,6 +50,12 @@
 - **AgiBot X2**: 人形机器人，会跳舞
 - **Lenovo Work Companion**: 桌面AI助手概念
 - **Kata Friends**: CES 2026 AI宠物
+- **MimiClaw**: ESP32-S3开源AI助手，GitHub 3,229 stars
+- **zclaw**: ESP32 AI助手，<888KB
+- **Eva.i**: Kickstarter AI机器人伴侣，仿生电子皮肤
+- **Xiaozhi**: ESP32 AI语音助手
+- **众筹策略**: Looi Robot分析($648K成功)，BOM成本$25-50
+- **代理**: 麒麟云、朗翰科技（海外众筹代运营）
 
 ## 📖 术语解码器
 
