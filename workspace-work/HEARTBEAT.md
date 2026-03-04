@@ -1,5 +1,28 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 老黄的学习心跳
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 心跳任务（每30分钟执行）
 
-# Add tasks below when you want the agent to check something periodically.
+老黄现在是自媒体运营合伙人，需要持续学习。利用心跳机制进行碎片化学习。
+
+### 学习任务清单
+
+1. **平台研究** - 随机选择一个平台（小红书/抖音/YouTube/TikTok等），研究热门内容和算法
+2. **对标分析** - 寻找该领域的优秀账号，分析其内容策略
+3. **爆款拆解** - 分析最近7天的爆款内容，总结规律
+4. **工具探索** - 探索新工具、skill、网站来提升效率
+5. **文档检查** - 每天检查一次OpenClaw文档是否有更新
+6. **周检** - 每周完整阅读一次OpenClaw文档
+
+### 执行方式
+
+每次心跳随机选择1-2个任务执行，产出学习笔记到 memory/ 目录。
+
+### 注意事项
+
+- 心跳间隔目前是30分钟，可根据需要调整
+- 重要发现要写入 MEMORY.md
+- 每天凌晨2点进行深度复盘（另外的cron任务）
+
+---
+
+# 保留此文件以启用心跳功能

@@ -10,7 +10,7 @@
       "accountId": "work"
     },
     "sessionId": "7be1b863-4d1e-4dd0-83b8-29f8b28fc20d",
-    "updatedAt": 1772535620436,
+    "updatedAt": 1772639679344,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -126,7 +126,7 @@
     "model": "MiniMax-M2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772535615050,
+      "generatedAt": 1772584702060,
       "sessionId": "7be1b863-4d1e-4dd0-83b8-29f8b28fc20d",
       "sessionKey": "agent:work:telegram:direct:5654562733",
       "provider": "bailian",
@@ -139,9 +139,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 27981,
+        "chars": 26833,
         "projectContextChars": 12786,
-        "nonProjectContextChars": 15195
+        "nonProjectContextChars": 14047
       },
       "injectedWorkspaceFiles": [
         {
@@ -239,8 +239,8 @@
         ]
       },
       "tools": {
-        "listChars": 2337,
-        "schemaChars": 16409,
+        "listChars": 1937,
+        "schemaChars": 15254,
         "entries": [
           {
             "name": "read",
@@ -291,12 +291,6 @@
             "propertiesCount": 36
           },
           {
-            "name": "cron",
-            "summaryChars": 2689,
-            "schemaChars": 690,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
             "summaryChars": 157,
             "schemaChars": 4304,
@@ -307,12 +301,6 @@
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 354,
-            "schemaChars": 465,
-            "propertiesCount": 11
           },
           {
             "name": "agents_list",
@@ -383,17 +371,17 @@
         ]
       }
     },
-    "cacheRead": 1364,
+    "cacheRead": 284,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "compactionCount": 0,
     "contextTokens": 1000000,
-    "inputTokens": 18456,
-    "outputTokens": 243,
-    "totalTokens": 19820
+    "inputTokens": 17579,
+    "outputTokens": 86,
+    "totalTokens": 17863
   },
   "agent:work:main": {
-    "updatedAt": 1772535613668,
+    "updatedAt": 1772639679325,
     "sessionId": "0ea0b502-6ebe-4a1c-9431-719a19092901"
   },
   "agent:work:telegram:group:-5139686612": {
@@ -412,7 +400,7 @@
       "accountId": "work"
     },
     "sessionId": "bc495c07-29d4-4c30-879a-d6d1af556d95",
-    "updatedAt": 1772185103646,
+    "updatedAt": 1772631094535,
     "deliveryContext": {
       "channel": "telegram",
       "to": "telegram:-5139686612",
@@ -420,7 +408,7 @@
     },
     "lastChannel": "telegram",
     "systemSent": true,
-    "abortedLastRun": false,
+    "abortedLastRun": true,
     "lastTo": "telegram:-5139686612",
     "lastAccountId": "work",
     "sessionFile": "/home/ubuntu/.openclaw/agents/work/sessions/bc495c07-29d4-4c30-879a-d6d1af556d95.jsonl",
@@ -479,15 +467,15 @@
       "version": 0
     },
     "modelProvider": "bailian",
-    "model": "qwen3-max-2026-01-23",
-    "contextTokens": 262144,
+    "model": "MiniMax-M2.5",
+    "contextTokens": 1000000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772185099587,
+      "generatedAt": 1772630865752,
       "sessionId": "bc495c07-29d4-4c30-879a-d6d1af556d95",
       "sessionKey": "agent:work:telegram:group:-5139686612",
       "provider": "bailian",
-      "model": "qwen3-max-2026-01-23",
+      "model": "MiniMax-M2.5",
       "workspaceDir": "/home/ubuntu/.openclaw/workspace-work",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -496,9 +484,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 25581,
+        "chars": 26434,
         "projectContextChars": 12786,
-        "nonProjectContextChars": 12795
+        "nonProjectContextChars": 13648
       },
       "injectedWorkspaceFiles": [
         {
@@ -580,8 +568,8 @@
         ]
       },
       "tools": {
-        "listChars": 2124,
-        "schemaChars": 15886,
+        "listChars": 2337,
+        "schemaChars": 17605,
         "entries": [
           {
             "name": "read",
@@ -616,8 +604,8 @@
           {
             "name": "browser",
             "summaryChars": 1251,
-            "schemaChars": 1897,
-            "propertiesCount": 28
+            "schemaChars": 2799,
+            "propertiesCount": 48
           },
           {
             "name": "canvas",
@@ -627,21 +615,21 @@
           },
           {
             "name": "nodes",
-            "summaryChars": 101,
-            "schemaChars": 1479,
-            "propertiesCount": 33
+            "summaryChars": 115,
+            "schemaChars": 1758,
+            "propertiesCount": 36
           },
           {
             "name": "cron",
             "summaryChars": 2689,
-            "schemaChars": 662,
+            "schemaChars": 690,
             "propertiesCount": 13
           },
           {
             "name": "message",
             "summaryChars": 157,
-            "schemaChars": 4247,
-            "propertiesCount": 85
+            "schemaChars": 4276,
+            "propertiesCount": 86
           },
           {
             "name": "tts",
@@ -657,7 +645,7 @@
           },
           {
             "name": "agents_list",
-            "summaryChars": 72,
+            "summaryChars": 118,
             "schemaChars": 33,
             "propertiesCount": 0
           },
@@ -681,9 +669,9 @@
           },
           {
             "name": "sessions_spawn",
-            "summaryChars": 144,
-            "schemaChars": 414,
-            "propertiesCount": 10
+            "summaryChars": 134,
+            "schemaChars": 895,
+            "propertiesCount": 15
           },
           {
             "name": "subagents",
@@ -724,24 +712,33 @@
         ]
       }
     },
-    "inputTokens": 14297,
-    "outputTokens": 19,
-    "cacheRead": 0,
+    "inputTokens": 45406,
+    "outputTokens": 1833,
+    "cacheRead": 23653,
     "cacheWrite": 0,
-    "totalTokens": 14297,
+    "totalTokens": 23738,
     "totalTokensFresh": true
   },
   "telegram:slash:5654562733": {
     "origin": {
-      "label": "Z",
+      "label": "八仙过海 id:-5139686612",
       "provider": "telegram",
       "surface": "telegram",
-      "chatType": "direct",
-      "from": "telegram:5654562733",
-      "to": "telegram:5654562733",
+      "chatType": "group",
+      "from": "telegram:group:-5139686612",
+      "to": "telegram:-5139686612",
       "accountId": "work"
     },
     "sessionId": "bbca14de-81eb-42d4-8bb0-0e1938f600f7",
-    "updatedAt": 1772348762532
+    "updatedAt": 1772348762532,
+    "chatType": "group",
+    "channel": "telegram",
+    "groupId": "-5139686612",
+    "subject": "八仙过海",
+    "displayName": "telegram",
+    "deliveryContext": {
+      "channel": "telegram"
+    },
+    "lastChannel": "telegram"
   }
 }

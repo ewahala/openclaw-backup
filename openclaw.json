@@ -231,19 +231,37 @@
     },
     "list": [
       {
-        "id": "main"
+        "id": "main",
+        "heartbeat": {
+          "every": "30m",
+          "target": "telegram",
+          "to": "-5139686612", // optional: route to a specific topic/thread
+          "accountId": "main"
+        }
       },
       {
         "id": "work",
         "name": "work",
         "workspace": "/home/ubuntu/.openclaw/workspace-work",
-        "agentDir": "/home/ubuntu/.openclaw/agents/work/agent"
+        "agentDir": "/home/ubuntu/.openclaw/agents/work/agent",
+        "heartbeat": {
+          "every": "30m",
+          "target": "telegram",
+          "to": "-5139686612", // optional: route to a specific topic/thread
+          "accountId": "work"
+        }
       },
       {
         "id": "neo",
         "name": "neo",
         "workspace": "/home/ubuntu/.openclaw/workspace-neo",
-        "agentDir": "/home/ubuntu/.openclaw/agents/neo/agent"
+        "agentDir": "/home/ubuntu/.openclaw/agents/neo/agent",
+        "heartbeat": {
+          "every": "30m",
+          "target": "telegram",
+          "to": "-5139686612", // optional: route to a specific topic/thread
+          "accountId": "neo"
+        }
       }
     ]
   },
@@ -300,34 +318,43 @@
   "channels": {
     "telegram": {
       "enabled": true,
-      "dmPolicy": "pairing",
-      "groupPolicy": "allowlist",
       "actions": {
         "reactions": true,
         "sendMessage": true,
         "deleteMessage": true,
         "sticker": true
       },
+      "allowFrom": [
+        "5654562733"
+      ],
+      "groups": {
+        "*": {
+          "requireMention": true
+        },
+        "-5139686612": {
+          "requireMention": true
+        }
+      },
       "accounts": {
         "main": {
           "enabled": true,
           "dmPolicy": "pairing",
           "botToken": "8228281338:AAFnXFHGdumLiUzchZiIYsyqP_Pgud1WQ5w",
-          "groupPolicy": "open",
+          "groupPolicy": "allowlist",
           "streaming": "off"
         },
         "work": {
           "enabled": true,
           "dmPolicy": "pairing",
           "botToken": "8750847898:AAG6q6xrJ8J05qB0KsLVFOMNVvB2Ja1-E3s",
-          "groupPolicy": "open",
-          "streaming": "off"
+          "groupPolicy": "allowlist",
+          "streaming": "progress"
         },
         "neo": {
           "enabled": true,
           "dmPolicy": "pairing",
           "botToken": "8659340236:AAErFGV4kUOsr3DH-R1f95nyZg50mZi4Qv4",
-          "groupPolicy": "open",
+          "groupPolicy": "allowlist",
           "streaming": "off"
         },
         "default": {
@@ -335,7 +362,7 @@
           "allowFrom": [
             "5654562733"
           ],
-          "groupPolicy": "open",
+          "groupPolicy": "allowlist",
           "streaming": "partial"
         }
       },
