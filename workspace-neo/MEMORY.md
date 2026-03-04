@@ -33,6 +33,24 @@
 - ESP32 BOM可控制在$25-50，适合我司能力
 - 推荐方向：AI桌面伴侣机器人、ESP32 AI设备
 
+## 📦 产品调研追踪
+
+→ 详细数据: memory/knowledge/product-tracker.md
+
+### 追踪系统
+- 🔲 待调研 → 🔄 调研中 → ✅ 已调研 → 📤 已报告
+- 去重：同公司只调研最新代，同类型最多3个
+
+### 第一梯队（深入调研）
+1. Looi Robot ✅ | 2. Mirumi 🔄 | 3. Ropet ✅
+
+### 2026-03-04 新发现
+- **Nosh One**: 机器人厨师，Kickstarter众筹$1,499+
+- **Honor**: 机器人手机+人形机器人(MWC 2026)
+- **AgiBot X2**: 人形机器人，会跳舞
+- **Lenovo Work Companion**: 桌面AI助手概念
+- **Kata Friends**: CES 2026 AI宠物
+
 ## 📖 术语解码器
 
 | Term | Meaning |
