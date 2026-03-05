@@ -10,7 +10,7 @@
       "accountId": "neo"
     },
     "sessionId": "23a38088-eea1-44d7-96c8-41191b285326",
-    "updatedAt": 1772640421628,
+    "updatedAt": 1772719972444,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -185,7 +185,7 @@
     "model": "MiniMax-M2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772640415978,
+      "generatedAt": 1772719889280,
       "sessionId": "23a38088-eea1-44d7-96c8-41191b285326",
       "sessionKey": "agent:neo:telegram:direct:5654562733",
       "provider": "bailian",
@@ -198,8 +198,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 26842,
-        "projectContextChars": 9066,
+        "chars": 28715,
+        "projectContextChars": 10939,
         "nonProjectContextChars": 17776
       },
       "injectedWorkspaceFiles": [
@@ -231,24 +231,24 @@
           "name": "IDENTITY.md",
           "path": "/home/ubuntu/.openclaw/workspace-neo/IDENTITY.md",
           "missing": false,
-          "rawChars": 185,
-          "injectedChars": 185,
+          "rawChars": 167,
+          "injectedChars": 167,
           "truncated": false
         },
         {
           "name": "USER.md",
           "path": "/home/ubuntu/.openclaw/workspace-neo/USER.md",
           "missing": false,
-          "rawChars": 134,
-          "injectedChars": 134,
+          "rawChars": 338,
+          "injectedChars": 338,
           "truncated": false
         },
         {
           "name": "HEARTBEAT.md",
           "path": "/home/ubuntu/.openclaw/workspace-neo/HEARTBEAT.md",
           "missing": false,
-          "rawChars": 167,
-          "injectedChars": 167,
+          "rawChars": 581,
+          "injectedChars": 581,
           "truncated": false
         },
         {
@@ -263,8 +263,8 @@
           "name": "MEMORY.md",
           "path": "/home/ubuntu/.openclaw/workspace-neo/MEMORY.md",
           "missing": false,
-          "rawChars": 899,
-          "injectedChars": 899,
+          "rawChars": 2172,
+          "injectedChars": 2172,
           "truncated": false
         }
       ],
@@ -470,17 +470,17 @@
         ]
       }
     },
-    "cacheRead": 49598,
+    "cacheRead": 122110,
     "cacheWrite": 0,
     "totalTokensFresh": true,
     "compactionCount": 0,
     "contextTokens": 1000000,
-    "inputTokens": 5182,
-    "outputTokens": 217,
-    "totalTokens": 54780
+    "inputTokens": 60881,
+    "outputTokens": 1036,
+    "totalTokens": 122539
   },
   "agent:neo:main": {
-    "updatedAt": 1772645636160,
+    "updatedAt": 1772725972574,
     "sessionId": "1c38054b-eae5-4ea8-92ef-3a202c30586e",
     "systemSent": true,
     "abortedLastRun": false,
@@ -489,7 +489,7 @@
       "label": "5654562733",
       "provider": "telegram",
       "from": "5654562733",
-      "to": "-5139686612",
+      "to": "-1003738109611",
       "accountId": "neo"
     },
     "sessionFile": "/home/ubuntu/.openclaw/agents/neo/sessions/1c38054b-eae5-4ea8-92ef-3a202c30586e.jsonl",
@@ -656,7 +656,7 @@
     "contextTokens": 1000000,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1772645549608,
+      "generatedAt": 1772725923223,
       "sessionId": "1c38054b-eae5-4ea8-92ef-3a202c30586e",
       "sessionKey": "agent:neo:main",
       "provider": "bailian",
@@ -669,9 +669,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 27433,
-        "projectContextChars": 9689,
-        "nonProjectContextChars": 17744
+        "chars": 28686,
+        "projectContextChars": 10939,
+        "nonProjectContextChars": 17747
       },
       "injectedWorkspaceFiles": [
         {
@@ -734,8 +734,8 @@
           "name": "MEMORY.md",
           "path": "/home/ubuntu/.openclaw/workspace-neo/MEMORY.md",
           "missing": false,
-          "rawChars": 922,
-          "injectedChars": 922,
+          "rawChars": 2172,
+          "injectedChars": 2172,
           "truncated": false
         }
       ],
@@ -941,21 +941,21 @@
         ]
       }
     },
-    "inputTokens": 53478,
-    "outputTokens": 2646,
-    "cacheRead": 28871,
+    "inputTokens": 171693,
+    "outputTokens": 482,
+    "cacheRead": 85630,
     "cacheWrite": 0,
-    "totalTokens": 29096,
+    "totalTokens": 87194,
     "totalTokensFresh": true,
-    "lastHeartbeatText": "✅ **Heartbeat任务完成** 已完成： 1. ✅ 搜索AI硬件/玩具市场动态，发现7个新产品 2. ✅ 更新AI产品调研报告 (memory/projects/ai-product-research.md) 3. ✅ 更新MEMORY.md今日发现 **今日调研发现摘要：** - 🏭 **Nosh One** - 机器人厨师，Kickstarter $1,499+ - 📱 **Honor** - 机器人手机+人形机器人(MWC 2026) - 🤖 **AgiBot X2** - 人形机器人，会跳舞 - 💻 **Lenovo Work Companion** - 桌面AI助手概念 - 🐱 **Kata Friends** - CES 2026 AI宠物",
-    "lastHeartbeatSentAt": 1772640143641,
+    "lastHeartbeatText": "✅ **Heartbeat任务完成 (15:23 UTC)** 已完成： 1. ✅ 产品验证和众筹策略调研 **众筹策略关键发现：** | 阶段 | 策略 | |------|------| | **验证阶段** | 单腔模具小批量 + 众筹测试市场 | | **众筹目的** | 真实收入+需求验证+用户反馈 | | **成功要素** | 开放式平台 + 量化性能提升 | | **中国案例** | Snapmaker, Rokid, Anker创纪录 | **我司产品化路径：** 1. 原型验证 (单腔模具) 2. Kickstarter众筹测试 ($50K-100K目标) 3. 量产优化 (多腔模具) 4. 电商销售 / 渠道合作",
+    "lastHeartbeatSentAt": 1772724217242,
     "deliveryContext": {
       "channel": "telegram",
-      "to": "-5139686612",
+      "to": "-1003738109611",
       "accountId": "neo"
     },
     "lastChannel": "telegram",
-    "lastTo": "-5139686612",
+    "lastTo": "-1003738109611",
     "lastAccountId": "neo"
   },
   "agent:neo:cron:cf8c5ff4-54ee-4af1-926e-6602825cbe32": {

@@ -5,8 +5,9 @@
 ## 持续任务清单
 
 ### 1. 调研学习 (每次必做)
-- 搜索AI硬件/玩具市场新产品动态
-- 关注Kickstarter/Indiegogo众筹新品
+- 搜索AI硬件/玩具市场新产品动态（web_search API到限额时用无头浏览器）
+- 访问行业报告网站获取市场数据
+- 关注Kickstarter/Indiegogo众筹新品（被Cloudflare阻挡时可跳过）
 - 收集行业趋势和技术方向
 
 ### 2. 知识积累

@@ -17,20 +17,27 @@
 
 ### 1. AI桌面伴侣机器人
 成功众筹案例：
-- **Looi Robot** - 2024年2月 Kickstarter，$648,000，Elon Musk点赞
-- **Doly** - 树莓派驱动，AI桌面伴侣
-- **StackChan** - M5Stack开源桌面AI机器人
-- **OUROBOT** - ChatGPT桌面伴侣
-- **Ropet** - AI机器人宠物
+
+| 产品 | 众筹时间 | 众筹金额 | 价格 | 特点 |
+|------|---------|---------|------|------|
+| **Looi Robot** | 2024年2月 | $648,000 | $129起 | ChatGPT集成、15W无线充电、面部追踪、Elon Musk点赞 |
+| **Ropet (Kamomo)** | 2024年12月 | $400,000 | $299 | 情感AI宠物、2024年度最佳AI消费硬件 |
+| **Doly** | 2023年10月 | - | $289 | 树莓派驱动、开源设计、技能开发工具 |
+| **StackChan** | 2026年1月 | $10,001目标 | - | M5Stack开源、ESP32、可定制、MicroPython/Arduino |
+| **OUROBOT** | - | - | - | ChatGPT桌面伴侣 |
 
 技术特点：
 - 多使用ESP32/树莓派作为控制核心
 - 结合ChatGPT等LLM实现语音对话
 - 表情丰富、互动性强
-- 定价从$99-$299不等
+- 定价从$129-$299不等
 
-### 2. ESP32 AI应用
+### 2. ESP32 AI应用 (2026年更新)
 - **ESP-SparkBot** - Espressif官方低成本LLM机器人
+- **zclaw** - ESP32 AI助手，支持Anthropic/OpenAI/OpenRouter (Hackaday项目)
+- **Xiaozhi AI** - ESP32离线语音助手，支持ASR、VLLM视觉模型
+- **AiPi** - ESP32-S3本地语音助手桥接器
+- **ESP32-S3/P4** - 2026年推荐型号，带AI加速器和摄像头/LCD支持
 - **成本低** - BOM可控制在$25-50
 - **生态成熟** - 大量教程和社区支持
 - 适合：语音助手、智能控制、边缘AI
@@ -77,11 +84,18 @@
 | **Lenovo Work Companion** | 桌面AI助手 | 概念 | 2026概念产品 | 任务同步、防 burnout |
 | **Kata Friends** | AI宠物 | 未定价 | CES 2026 | 能听、能看、能思考 |
 | **Realbotix Melody** | 全尺寸AI伴侣 | 未定价 | 新发布 | 可作为浪漫伙伴/助手 |
+| **Cynus Chess Robot** | 象棋机器人 | Kickstarter | Hackaday报道 | 便携AI象棋机器人 |
 
 **趋势洞察：**
 - 大厂 (Honor, Lenovo) 开始入场AI硬件
 - 人形机器人价格下探有望
 - 桌面/桌面AI伴侣仍是热门众筹方向
+
+### 供应链洞察 (2026年3月)
+- **中国供应链优势**: 中国在传感器、电池等供应链完善，制造迭代速度快
+- **Unitree**: 预计2026年出货10,000-20,000台人形机器人
+- **人形机器人预测**: Morgan Stanley预测中国2026年销量将超28,000台
+- **价格区间**: 高端陪伴机器人约$173,000 (Moya)，消费级人形机器人将下探
 - ESP32运行AI助手成为开源热点 (MimiClaw 3,229 stars)
 - 仿生电子皮肤成为产品差异化新方向 (Eva.i)
 

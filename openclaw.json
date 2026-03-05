@@ -15,9 +15,16 @@
   },
   "browser": {
     "enabled": true,
-    "executablePath": "/usr/bin/chromium-browser",
-    "headless": false,
-    "noSandbox": true
+    "ssrfPolicy": {
+      "dangerouslyAllowPrivateNetwork": true
+    },
+    "profiles": {
+      "openclaw": { "cdpPort": 18800, "color": "#FF4500" },
+      "windows-chrome": {
+        "cdpUrl": "http://192.168.1.107:9222",
+        "color": "#00AA00"
+      }
+    }
   },
   "models": {
     "mode": "merge",
@@ -236,7 +243,7 @@
         "heartbeat": {
           "every": "30m",
           "target": "telegram",
-          "to": "-5139686612",
+          "to": "-1003738109611",
           "accountId": "main"
         }
       },
@@ -248,7 +255,7 @@
         "heartbeat": {
           "every": "30m",
           "target": "telegram",
-          "to": "-5139686612",
+          "to": "-1003738109611",
           "accountId": "work"
         }
       },
@@ -260,7 +267,7 @@
         "heartbeat": {
           "every": "30m",
           "target": "telegram",
-          "to": "-5139686612",
+          "to": "-1003738109611",
           "accountId": "neo"
         }
       }
